@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,300&display=swap');
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Merriweather", sans-serif;
+    background-color: #fff;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+}
+.hat {
+    background: linear-gradient( #000000 70%, transparent );
+    height: 1000px;
+}
+.sign_wrap {
+    text-align: center;
+    padding: 60px 20px;
+    
+    padding-top: 350px;
+}
+.sign_wrap .sign_word {
+    margin: 0;
+    font-weight: bold;
+    font-size: 60px;
+    /* font-style: italic; */
+    letter-spacing: 5px;
+    line-height: 50px;
+    color: #fff;
+    text-transform: uppercase;
+    animation: flicker 1.5s infinite 
+}
+.nav_block {
+    text-align: center;
+}
+.nav_bar {
+    
+    padding: 0;
+    list-style: none;
+}
+.nav_tabs {
+    padding: 20px;
+    display: inline-block;
+}
+.nav_tabs a {
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+.first_block {
+    margin-top: 1000px;
+    height: 200px;
+    border: #4000ff 1px solid;
+}
+.second_block {
+    margin-top: 1000px;
+    height: 200px;
+    border: #00ff55 1px solid;
+}
+.third_block {
+    margin-top: 1000px;
+    height: 200px;
+    border: #ff0000 1px solid;
+}
+
+/* Скролл вверх */
+.scroll-up {
+    position: fixed;
+    left: 20px;
+    bottom: 70px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* border: solid 1px rgb(184, 184, 184); */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.30);
+    text-align: center;
+    align-items: center;
+    background-color: white;
+    opacity: 0.8;
+}
+.scroll-up i {
+    margin-top: 20%;
+}
+@keyframes flicker {
+    
+    100% {
+    /* Larger blur radius */
+    text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px #4000ff,
+      0 0 80px #4000ff,
+      0 0 90px #4000ff,
+      0 0 100px #4000ff,
+      0 0 150px #4000ff;
+  }
+  50% {
+    /* Smaller blur radius */
+    text-shadow:
+      0 0 2px #fff,
+      0 0 4px #fff,
+      0 0 6px #fff,
+      0 0 10px #4000ff,
+      0 0 45px #4000ff,
+      0 0 55px #4000ff,
+      0 0 70px #4000ff,
+      0 0 80px #4000ff;
+  }
+  0% {
+    /* Larger blur radius */
+    text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px #4000ff,
+      0 0 80px #4000ff,
+      0 0 90px #4000ff,
+      0 0 100px #4000ff,
+      0 0 150px #4000ff;
+  }
+}
+  
+  
