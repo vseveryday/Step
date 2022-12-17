@@ -33,18 +33,22 @@ body {
     text-align: center;
 }
 .nav_bar {
-    
     padding: 0;
     list-style: none;
 }
 .nav_tabs {
+    width: 300px;
     padding: 20px;
     display: inline-block;
-}
-.nav_tabs a {
-    color: black;
+    color: white;
     cursor: pointer;
     text-decoration: none;
+    background-color: black;
+    border-radius: 30px;
+    margin: 0 20px;
+}
+.nav_tabs a {
+    
 }
 .first_block {
     margin-top: 1000px;
